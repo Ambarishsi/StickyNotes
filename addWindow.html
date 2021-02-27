@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    var x = Math.floor((Math.random() * 10) + 1);
+     document.getElementById("amb").value = Ambarish+x;
+     </script>
+    <title id="amb"></title>
+    <style type="text/css">
+        textarea { 
+            font-size: 15px;
+
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+      border: none; 
+      width: 100%;
+      height: 100vh;
+    }
+    .example {
+overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+.button {
+  border: none;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:50%;
+}
+
+.button2 {background-color: #d6cbd3;} 
+.button3 {background-color: #5b9aa0;} 
+.button4 {background-color: #f9d5e5;} 
+.button5 {background-color: #92a8d1;} 
+.button6 {background-color: #ffef96;} 
+.button8 {background-color: #8ca3a3;} 
+.button9 {background-color: #b7d7e8;} 
+.button10 {background-color: #f9ccac;} 
+.button11 {background-color: #f18973;} 
+
+    </style>
+</head>
+<body class="example">
+<center>
+<button class="button button2" onclick="ambarish('d6cbd3')"></button>
+<button class="button button3" onclick="ambarish('5b9aa0')"></button>
+<button class="button button4" onclick="ambarish('f9d5e5')"></button>
+<button class="button button5" onclick="ambarish('92a8d1')"></button>
+<button class="button button6" onclick="ambarish('ffef96')"></button>
+<button class="button button8" onclick="ambarish('8ca3a3')"></button>
+<button class="button button9" onclick="ambarish('b7d7e8')"></button>
+<button class="button button10" onclick="ambarish('f9ccac')"></button>
+<button class="button button11" onclick="ambarish('f18973')"></button>
+</center>
+    <textarea name="ambarish" id="ambarish"  value=""></textarea>
+    <script>
+        function ambarish(col) {
+          document.getElementById("ambarish").style.backgroundColor = "#"+col;
+        }
+        </script>
+</body>
+</html>
